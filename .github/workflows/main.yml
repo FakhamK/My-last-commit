@@ -8,6 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     
-    - name: docker build csharp
+    - name: docker build Application
       run: |
-        docker build . -t lastcommit:latest
+        docker build ./ -t lastcommit:latest
