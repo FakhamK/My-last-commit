@@ -19,4 +19,4 @@ jobs:
         docker build ./ -t lastcommit:latest
     - name: docker push
       run: |
-        docker push fakhamk/My-last-commit:1.0.0
+        docker push fakhamk/my-last-commit:1.0.0
