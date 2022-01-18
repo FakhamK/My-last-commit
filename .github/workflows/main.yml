@@ -1,0 +1,13 @@
+name: TEST pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: docker build Application
+      run: |
+        docker build ./ -t lastcommit:latest
