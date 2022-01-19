@@ -16,7 +16,7 @@ jobs:
     
     - name: docker build Application
       run: |
-        docker build ./ -t lastcommit:latest
+        docker build ./ -t fakhamk/lastcommit:latest
     - name: docker push
       run: |
         docker push fakhamk/lastcommit:latest
