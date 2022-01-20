@@ -14,7 +14,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     
-    - name: docker build Application
+    - name: docker build application
       run: |
         docker build ./ -t fakhamk/lastcommit:latest
     - name: docker push
